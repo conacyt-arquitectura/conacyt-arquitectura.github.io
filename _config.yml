@@ -129,6 +129,6 @@ plugins:
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-redirect-from
-logo: "/assets/images/logo.svg"
+logo: "/assets/images/logo.png"
 description: Documentation and learning resource for Siteleaf, a content management
   system designed for a better web.
