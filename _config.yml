@@ -1,6 +1,6 @@
 ---
 title: CONACYT - Arquitectura
-timezone: America/New_York
+timezone: America/Mexico
 collections:
   api:
     title: API
