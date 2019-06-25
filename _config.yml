@@ -125,7 +125,7 @@ exclude:
 github_url: https://github.com/conacyt-arquitectura
 sass:
   style: compressed
-gems:
+plugins:
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-redirect-from
