@@ -8,7 +8,7 @@ layout: searching
 
 <script>
 	window.data = {
-		{% for post in site.posts %}
+		{% for post in site.documents %}
 			{% if post.title %}
 				{% unless post.excluded_in_search %}
 					{% if added %},{% endif %}
