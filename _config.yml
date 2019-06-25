@@ -2,6 +2,15 @@
 title: CONACYT - Arquitectura
 timezone: America/Mexico
 collections:
+  git:
+    title: Git
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: Lineamientos para Git
+      badge: "/uploads/badge--api.svg"
+      in_nav: true
+    position: 60
   api:
     title: API
     output: true
@@ -101,6 +110,12 @@ defaults:
 - scope:
     path: ''
     type: api
+  values:
+    layout: page
+    color: purple
+- scope:
+    path: ''
+    type: git
   values:
     layout: page
     color: purple
