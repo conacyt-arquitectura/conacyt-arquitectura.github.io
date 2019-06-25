@@ -1,5 +1,5 @@
 ---
-title: Learn Siteleaf
+title: CONACYT - Arquitectura
 timezone: America/New_York
 collections:
   api:
@@ -12,7 +12,7 @@ collections:
       in_nav: true
     position: 60
   sites:
-    title: Deploy & Collaborate
+    title: Despliegue y Colaboración
     output: true
     permalink: "/:collection/:path/"
     meta:
@@ -21,7 +21,7 @@ collections:
       in_nav: true
     position: 50
   themes:
-    title: Developing Themes
+    title: Desarrollo de Temas
     output: true
     permalink: "/:collection/:path/"
     meta:
@@ -39,7 +39,7 @@ collections:
       in_nav: true
     position: 10
   v1:
-    title: Legacy Sites
+    title: Sitios Legados
     output: true
     permalink: "/:collection/:path/"
     meta:
@@ -48,7 +48,7 @@ collections:
       in_nav: true
     position: 70
   content:
-    title: Managing Content
+    title: Administrar Contenido
     output: true
     permalink: "/:collection/:path/"
     meta:
@@ -60,7 +60,7 @@ collections:
     title: Posts
     output: true
   style:
-    title: Style Guide
+    title: Guía de Estilos
     output: true
     permalink: "/:collection/:path/"
     meta:
@@ -115,14 +115,14 @@ defaults:
   values:
     layout: page
     color: darkest-gray
-url: http://learn.siteleaf.com
+url: https://conacyt-arquitectura.github.io/
 permalink: pretty
 exclude:
 - Gemfile
 - Gemfile.lock
 - README*
 - ".gitignore"
-github_url: https://github.com/siteleaf/learn.siteleaf.com
+github_url: https://github.com/conacyt-arquitectura
 sass:
   style: compressed
 gems:
