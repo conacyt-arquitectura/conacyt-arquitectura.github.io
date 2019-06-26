@@ -22,7 +22,7 @@
     </ul>
     <a href="/" class="header__home"><img src="{{ site.logo }}" class="header__logo" alt="{{ site.title }}" /></a>
     <h1 class="header__title">{{ title | default: page.title }}</h1>
-    {% if page.subtitle %}<div class="header__subtitle">{{ page.subtitle | markdownify }}</div>{% endif %}
+    <h3 class="header__subtitle">{{ page.subtitle | markdownify}} </h3>
     {% include search.html %}
   </header>
   <nav class="mobileNav">
