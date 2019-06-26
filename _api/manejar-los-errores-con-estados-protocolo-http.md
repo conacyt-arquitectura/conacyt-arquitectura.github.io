@@ -1,5 +1,5 @@
 ---
-title: Manejar los errores con estados del protocolo HTTP
+title: Manejo de Errores
 date: 2019-06-26 13:05:46.559000000 -05:00
 position: 9
 ---

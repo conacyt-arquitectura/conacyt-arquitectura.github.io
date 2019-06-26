@@ -1,5 +1,5 @@
 ---
-title: Proveer Métodos para Filtrar la Información
+title: Filtrado de Información
 date: 2019-06-26 13:05:46.559000000 -05:00
 position: 7
 ---

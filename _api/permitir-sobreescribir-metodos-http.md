@@ -1,5 +1,5 @@
 ---
-title: Permitir la sobreescritura de los métodos HTTP
+title: Sobreescritura de los métodos HTTP
 date: 2019-06-26 13:05:46.559000000 -05:00
 position: 10
 ---

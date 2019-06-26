@@ -1,8 +1,10 @@
 ---
-title: Utilizar Subrecursos para relaciones
+title: Relaciones entre Recursos
 date: 2019-06-26 13:05:46.559000000 -05:00
 position: 4
 ---
+
+Utilizar Subrecursos para relaciones
 
 Si un recurso está relacionado con otro, utilizar notación para sub-recursos:
 

@@ -1,5 +1,5 @@
 ---
-title: El método GET no debe alterar el estado del recurso
+title: Uso del Método GET
 date: 2019-06-26 13:05:46.559000000 -05:00
 position: 2
 ---
