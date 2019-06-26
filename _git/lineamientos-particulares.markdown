@@ -1,7 +1,7 @@
 ---
 title: Lineamientos Particulares
 date: 2019-06-25 23:18:00 -04:00
-position: 9
+position: 10
 ---
 
 Los siguiente lineamientos aplican a todas la ramas:

@@ -1,7 +1,7 @@
 ---
 title: Rama Hotfixes
 date: 2019-06-25 23:18:00 -04:00
-position: 7
+position: 8
 ---
 
 ## Rama Hotfixes

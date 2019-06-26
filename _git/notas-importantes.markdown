@@ -1,7 +1,7 @@
 ---
 title: Notas Importantes
 date: 2019-06-25 23:18:00 -04:00
-position: 10
+position: 11
 ---
 
 Existen dos cosas que nunca se deberá de llevar a cabo en **Git**:
