@@ -4,8 +4,8 @@ date: 2019-06-26 13:05:46.559000000 -05:00
 position: 7
 ---
 
-Positive
-: Proveer operaciones de filtrado (filtering),  ordenamiento (sorting), selección de campos (field selection) y Paginación (Paging) de colecciones
+Proveer operaciones de filtrado (filtering),  ordenamiento (sorting), selección de campos (field selection) y Paginación (Paging) de colecciones
+{: .note}
 
 ### Filtering
 

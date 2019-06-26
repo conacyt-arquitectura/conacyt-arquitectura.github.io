@@ -4,39 +4,40 @@ date: 2019-06-26 13:05:46.559000000 -05:00
 position: 1
 ---
 
-Positive
-: Usar:
+Usar:
 ```
 /carros
 /carros/711
 ```
+{: .note}
 
-Negative
-: No Usar
+No Usar
 ```
+
 /getAllCars
 /createNewCar
 /deleteAllCars
 ```
+{: .warning}
 
 
 No mezclar sustantivos en singular y en plural. Utilizar sólo plural para todos los recursos.
 
 
-Positive
-: Usar
+Usar
 ```
 /cars
 /users
 /products
 /settings
 ```
+{: .note}
 
-Negative
-: No Usar
+No Usar
 ```
 /car
 /user
 /product
 /setting
 ```
+{: .warning}

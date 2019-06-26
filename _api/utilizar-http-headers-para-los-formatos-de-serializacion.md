@@ -6,8 +6,8 @@ position: 5
 
 Utilizar los Headers del protocolo HTTP para los formatos de serialización
 
-Positive
-: Tanto el cliente como el servidor necesitan saber que tipo de formato se está utilizando durante la comunicación. El formato tiene que ser especificado en el header del protocolo HTTP:
+Tanto el cliente como el servidor necesitan saber que tipo de formato se está utilizando durante la comunicación. El formato tiene que ser especificado en el header del protocolo HTTP:
+{: .note}
 
 `Content-Type` define el formato de la solucitud.  
 
