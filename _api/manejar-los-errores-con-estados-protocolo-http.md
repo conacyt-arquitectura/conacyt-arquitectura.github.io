@@ -31,7 +31,7 @@ Se tiene que considerar el [payload](http://softwareengineering.stackexchange.co
     "userMessage": "Disculpa, el recurso solicitado no existe",
     "internalMessage": "El usuario no existe en la base de datos",
     "code": 34,
-    "more info": "http://dads.infotec.mx/app/api/v1/errors/12345"
+    "more info": "http://conacyt.gob.mx/api/v1/errors/12345"
    }
   ]
 }
