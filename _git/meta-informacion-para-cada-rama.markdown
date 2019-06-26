@@ -4,7 +4,7 @@ date: 2019-06-25 23:18:00 -04:00
 position: 3
 ---
 
-Con la finalidad de comprender de manera precisa el estudio de las diferentes ramas de trabajo utilizados en la **DADS**, a continuación se presenta la descripción de la meta-información que define a cada una de las ramas y que será utilizado a lo largo de este documento para describirla.
+Con la finalidad de comprender de manera precisa el estudio de las diferentes ramas de trabajo utilizados en el **CONACYT**, a continuación se presenta la descripción de la meta-información que define a cada una de las ramas y que será utilizado a lo largo de este documento para describirla.
 
 | Metadato | Descripción |
 | --- | --- |
