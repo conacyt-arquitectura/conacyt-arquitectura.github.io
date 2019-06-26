@@ -7,37 +7,10 @@ collections:
     output: true
     permalink: "/:collection/:path/"
     meta:
-      description: Lineamientos para Git
-      badge: "/uploads/badge--api.svg"
+      description: Lineamientos para Desarrolladores
+      badge: "/uploads/logos/git-icon.svg"
       in_nav: true
     position: 60
-  api:
-    title: API
-    output: true
-    permalink: "/:collection/:path/"
-    meta:
-      description: Integrate directly into your site or app
-      badge: "/uploads/badge--api.svg"
-      in_nav: true
-    position: 60
-  sites:
-    title: Despliegue y Colaboración
-    output: true
-    permalink: "/:collection/:path/"
-    meta:
-      description: Publish your site and invite other users
-      badge: "/uploads/badge--sites.svg"
-      in_nav: true
-    position: 50
-  themes:
-    title: Desarrollo de Temas
-    output: true
-    permalink: "/:collection/:path/"
-    meta:
-      description: Liquid, Sass, Jekyll, syncing, local dev
-      badge: "/uploads/badge--themes.svg"
-      in_nav: true
-    position: 40
   getting-started:
     title: Getting Started
     output: true
@@ -47,24 +20,6 @@ collections:
       badge: "/uploads/badge--getting-started.svg"
       in_nav: true
     position: 10
-  v1:
-    title: Sitios Legados
-    output: true
-    permalink: "/:collection/:path/"
-    meta:
-      description: Moving from v1 to v2
-      badge: "/uploads/badge--v1.svg"
-      in_nav: true
-    position: 70
-  content:
-    title: Administrar Contenido
-    output: true
-    permalink: "/:collection/:path/"
-    meta:
-      description: Pages, collections, posts, metadata
-      badge: "/uploads/badge--content.svg"
-      in_nav: true
-    position: 30
   posts:
     title: Posts
     output: true
@@ -130,6 +85,12 @@ defaults:
   values:
     layout: page
     color: darkest-gray
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: page
+    color: red
 url: https://conacyt-arquitectura.github.io/
 permalink: pretty
 exclude:
