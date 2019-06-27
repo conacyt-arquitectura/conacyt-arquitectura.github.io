@@ -7,5 +7,5 @@ header_title: "CONACYT"
 regenerate: true
 nav_toggle: false
 color: blue
-layout: landing
+layout: post
 ---
