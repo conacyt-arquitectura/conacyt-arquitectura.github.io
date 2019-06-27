@@ -108,3 +108,4 @@ plugins:
 logo: "/assets/images/logo.png"
 description: Documentation and learning resource for Siteleaf, a content management
   system designed for a better web.
+posts_url: "/posts/"
