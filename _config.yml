@@ -20,6 +20,15 @@ collections:
       badge: "/uploads/badge--api.svg"
       in_nav: true
     position: 60
+  lineamientos-back-end:
+    title: Lineamientos para Back-End
+    output: true
+    permalink: "/:collection/:path"
+    meta:
+      description: Lineamientos para Back-End
+      badge: "/assets/images/logo.png"
+      in_nav: true
+    position: 70
   posts:
     title: Posts
     output: true
@@ -71,6 +80,12 @@ defaults:
 - scope:
     path: ''
     type: git
+  values:
+    layout: page
+    color: purple
+- scope:
+    path: ''
+    type: lineamientos-back-end
   values:
     layout: page
     color: purple
