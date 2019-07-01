@@ -7,62 +7,123 @@ position: 3
 En la capa de servicio existen los métodos para el patrón CRUD (Create, Read, Update, Delete) y la lógica para cada uno de ellos.
 
 ```java
+package com.example.service;
+
 /**
-* Implementación de Servicio para administrar {@link Entity}
-*
-*/
+ * Service Interface for managing {@link com.example.domain.Entity}.
+ */
 @Service
-public class EntityService {
+public interface EntityService {
 
-    private static final Logger LOG = LoggerFactory.getLogger(EntityService.class);
+   /**
+     * Save a entity.
+     *
+     * @param entityDTO the entity to save.
+     * @return the persisted entity.
+     */
+    EntityDTO save(EntityDTO entityDTO);
 
-    EntityRepository entityRepository;
+    /**
+     * Get all the entities.
+     *
+     * @param pageable the pagination information.
+     * @return the list of entities.
+     */
+    Page<EntityDTO> findAll(Pageable pageable);
 
-    public EntityService(EntityRepository entityRepository) {
+
+    /**
+     * Get the "id" entity.
+     *
+     * @param id the id of the entity.
+     * @return the entity.
+     */
+    Optional<EntityDTO> findOne(Long id);
+
+    /**
+     * Delete the "id" entity.
+     *
+     * @param id the id of the entity.
+     */
+    void delete(Long id);
+
+}
+
+```
+
+```java
+package com.example.service.impl;
+
+/**
+ * Service Implementation for managing {@link com.example.domain.Entity}.
+ */
+@Service
+@Transactional
+public class EntityServiceImpl implements EntityService {
+
+    private final Logger log = LoggerFactory.getLogger(EntityServiceImpl.class);
+
+    private final EntityRepository entityRepository;
+
+    private final EntityMapper entityMapper;
+
+    public EntityService(EntityRepository entityRepository, EntityMapper entityMapper) {
         this.entityRepository = entityRepository;
+        this.entityMapper = entityMapper;
     }
 
     /**
-    * Guarda una entity
-    *
-    * @param entity la entidad a guardar
-    * @return la entidad persistida
-    */
-    public Entity save(Entity entity) {
-        LOG.debug("Request to save entity: {}", entity);
-        return entityRepository.save(entity);
+     * Save a entity.
+     *
+     * @param entityDTO the entity to save.
+     * @return the persisted entity.
+     */
+    @Override
+    public EntityDTO save(EntityDTO entityDTO) {
+        log.debug("Request to save Entity : {}", entityDTO);
+        Entity entity = entityMapper.toEntity(entityDTO);
+        Entity = entityRepository.save(entity);
+        return entityMapper.toDto(entity);
     }
 
     /**
-    * Obtiene todas las entidades
-    *
-    * @param pageable la información de la paginación
-    * @return la lista de entidades
-    */
-    public Page<Entity> findAll(Pageable pageable) {
-        LOG.debug("Request to get all entities");
-        return entityRepository.findAll(pageable);
+     * Get all the entities.
+     *
+     * @param pageable the pagination information.
+     * @return the list of entities.
+     */
+    @Override
+    @Transactional(readOnly = true)
+    public Page<EntityDTO> findAll(Pageable pageable) {
+        log.debug("Request to get all Entities");
+        return entityRepository.findAll(pageable)
+            .map(entityMapper::toDto);
+    }
+
+
+    /**
+     * Get one entity by id.
+     *
+     * @param id the id of the entity.
+     * @return the entity.
+     */
+    @Override
+    @Transactional(readOnly = true)
+    public Optional<EntityDTO> findOne(Long id) {
+        log.debug("Request to get Entity : {}", id);
+        return entityRepository.findById(id)
+            .map(entityMapper::toDto);
     }
 
     /**
-    * Obtiene la entidad por id
-    *
-    * @param id el id de la entidad
-    * @return la entidad
-    */
-    public Optional<Entity> findOne(Long id) {
-        LOG.debug("Request to get Entity : {}", id);
-        return entityRepository.findOne(id);
-    }
-
-    /**
-    * Borra la entidad por id
-    *
-    * @param id el id de la entidad
-    */
+     * Delete the entity by id.
+     *
+     * @param id the id of the entity.
+     */
+    @Override
     public void delete(Long id) {
-        LOG.debug("Request to delete Entity: {}", id);
-        return entityRepository.delete(id);
+        log.debug("Request to delete Entity : {}", id);
+        entityRepository.deleteById(id);
     }
 
 }

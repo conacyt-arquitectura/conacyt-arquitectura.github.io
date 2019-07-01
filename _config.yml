@@ -17,6 +17,7 @@ collections:
     permalink: "/:collection/:path"
     meta:
       description: Lineamientos para Back-End
+      badge: "/assets/images/logo.png"
       in_nav: true
     position: 70
   posts:

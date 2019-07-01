@@ -7,7 +7,12 @@ position: 2
 Se utilizan objetos DTO (Data Transfer Object) como entradas o salidas de los métodos de los controladores REST. 
 
 ```java
-public class EntityDto {
+package com.example.service.dto;
+
+/**
+ * A DTO for the {@link com.example.domain.Entity} entity.
+ */
+public class EntityDto implements Serializable {
 
     private Long id;
 
