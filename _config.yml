@@ -2,6 +2,15 @@
 title: CONACYT - Arquitectura
 timezone: America/Mexico
 collections:
+  npm:
+    title: npm
+    output: true
+    permalink: "/:collection/:path"
+    meta:
+      description: npm
+      badge: "/uploads/logos/npm.svg"
+      in_nav: true
+    position: 80
   git:
     title: Git
     output: true
@@ -86,6 +95,12 @@ defaults:
 - scope:
     path: ''
     type: lineamientos-back-end
+  values:
+    layout: page
+    color: purple
+- scope:
+    path: ''
+    type: npm
   values:
     layout: page
     color: purple
