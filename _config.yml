@@ -109,6 +109,12 @@ defaults:
     color: purple
 - scope:
     path: ''
+    type: lineamientos-vue
+  values:
+    layout: page
+    color: green
+- scope:
+    path: ''
     type: npm
   values:
     layout: page
