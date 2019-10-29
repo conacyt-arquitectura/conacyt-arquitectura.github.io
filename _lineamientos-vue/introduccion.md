@@ -5,4 +5,4 @@ position: 1
 ---
 
 
-El modelo de desarrollo explicado a continuación puede variar en conformidad a las necesidades específicas de cada proyecto. El objetivo general es desarrollar componente para aplicaciones web con Vue.js y TypeScrip. 
+El modelo de desarrollo explicado a continuación puede variar en conformidad a las necesidades específicas de cada proyecto. El objetivo general es desarrollar componentes para aplicaciones web con Vue.js y TypeScript. 
