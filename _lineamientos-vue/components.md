@@ -8,10 +8,10 @@ position: 2
 Para el desarrollo de componentes, se deberán separar los archivos ***.vue*** y los ***.component.ts***  
 
 Ejemplo: ***home.vue***
-```vue
+```html
 <template>
     <div class="home row">
-  	<h1>{{mensaje}}</h1>
+  	<h1> "{{"{{mensaje"}}}}" </h1>
     </div>
 </template>
 
