@@ -23,7 +23,10 @@ export class Documento implements IDocumento {
     public contenidoContentType?: string
      ) { }
 }
-``` 
+```   
+***Nota:*** La libreria “JhiDataUtils” requiere que se le envíe un objeto con atributos donde guardar el contenido del archivo y el ContentType. Es necesario que el nombre del atributo en el que se guardará el ContentType del archivo tenga el mismo nombre que el atributo del objeto en el que se guardará el contenido seguido de "ContentType". Por ejemplo, si el atributo del objeto donde deseamos guardar el contenido de archivo se llama "information", deberá existir un atributo que se llame "informationContentType".  
+
+
 Para cargar un archivo se utilizará un input desde el template:  
 ```vue
 <input
@@ -56,29 +59,8 @@ export default class GenericComponent extends mixins(JhiDataUtils) {
 
 ```  
   
-El método “setFileData” de la librería “JhiDataUtils” asociará el archivo al objeto llamado “archivo”; se describe el proceso a continuación:  
+El método “setFileData” de la librería “JhiDataUtils” asociará el archivo al objeto llamado “archivo”.  
 
-```javascript 
-setFileData(event, entity, field, isImage) {
-    /*
-      El objeto "event", es el objeto que trae el archivo que subimos desde el input
-      "entity" hace referencia al objeto donde guardaremos el archivo 
-      "field" es el atributo del objeto "entity" donde guardaremos el contenido del archivo
-      "isImage" es un objeto de tipo boolean que nos indica si es o no un archivo con formato de imagen 
-    */
-    if (event && event.target.files && event.target.files[0]) {
-      const file = event.target.files[0];
-      if (isImage && !/^image\//.test(file.type)) {
-        return;
-      }
-      this.toBase64(file, base64Data => {
-        entity[field] = base64Data;
-        entity[ `${field}ContentType` ] = file.type;
-      });
-    }
-  }
-
-```  
 Ahora también se podrá descargar ese archivo desde el template de la siguiente manera:  
 ```vue
 <a class="pull-left" v-on:click="downloadDocument">
