@@ -35,7 +35,7 @@ collections:
     permalink: "/:collection/:path"
     meta:
       description: Lineamientos para Back-End
-      badge: "/assets/images/logo.png"
+      badge: "/uploads/badge--server.svg"
       in_nav: true
     position: 70
   lineamientos-vue:
@@ -45,6 +45,15 @@ collections:
     meta:
       description: Lineamientos para Vue.js
       badge: "/uploads/badge--vue.svg"
+      in_nav: true
+    position: 60
+  generator-vuejs-typescript-component:
+    title: Generador de Componentes VueJS
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: Generador de Componentes VueJS en Typescript
+      badge: "/uploads/yeoman-character.png"
       in_nav: true
     position: 60
   posts:
