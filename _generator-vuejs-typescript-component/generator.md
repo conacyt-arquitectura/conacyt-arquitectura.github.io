@@ -5,7 +5,7 @@ position: 4
 ---
 > Un generador [Yeoman](https://yeoman.io/) de un nuevo componente para VueJS en Typescript
 
-## Instalación
+## Instalación del generador
 Se asume que ya se tiene instalado [NodeJS](https://nodejs.org/).  
 Primero, usa el _registry_ de CONACYT.
 ```bash
